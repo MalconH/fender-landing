@@ -47,6 +47,9 @@ img {
   padding: 1rem;
   background-color: #f0f0f0;
 
+  transform: translateY(0);
+  transition: transform 0.75s ease;
+
   z-index: 1;
 }
 
@@ -336,6 +339,11 @@ img {
   text-align: end;
   margin-top: 2rem;
   font-size: 0.8rem;
+}
+
+.collapsed {
+  transform: translateY(-11rem);
+  transform-origin: top;
 }
 
 @media screen and (max-width: 31em) {
