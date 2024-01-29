@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Product Landing Page</title>
+</head>
+
+<body class="body">
+  <header class="header" id="header">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fender_guitars_logo.svg/2560px-Fender_guitars_logo.svg.png"
+      alt="Fender's Logo" class="header__image" id="header-img">
+    <nav class="nav-bar header__nav-bar" id="nav-bar">
+      <ul class="nav-bar__ul">
+        <li class="nav-bar__li">
+          <a href="#whats-new" class="nav-link">What's new?</a>
+        </li>
+        <li class="nav-bar__li">
+          <a href="#fender-feed" class="nav-link">Fender Feed</a>
+        </li>
+        <li class="nav-bar__li">
+          <a href="#accesories" class="nav-link">Accesories</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+  </header>
+
+  <div class="hero">
+    <h1 class="hero__h1">Subscribe to our Newsletter to receive the latest news</h1>
+    <form action="https://www.freecodecamp.com/email-submit" method="post" class="form" id="form">
+      <label for="email" class="form__label form__label--sr-only">Email:</label>
+      <input type="email" class="form__input" id="email" name="email" placeholder="Enter your email adress" />
+      <input type="submit" class="button form__button" id="submit" value="Subscribe" />
+    </form>
+  </div>
+
+  <main class="main">
+    <section class="section" id="whats-new">
+      <h2 class="section__h2">What's new?</h2>
+      <div class="section__products">
+        <article class="section__product">
+          <h2 class="product__name">Limited Edition Mikey Way Jazz Bass &reg;</h2>
+          <img src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10014/0149322317_fen_ins_frt_1_rr.jpg"
+            alt="Limited Edition Mikey Way Jazz Bass" class="product__img">
+          <div class="product__desc">
+            <p class="product__price">1,599.00 $</p>
+            <p class="product__variants"></p>
+          </div>
+        </article>
+        <article class="section__product">
+          <h2 class="product__name">Michael Landau Coma Stratocaster &reg;</h2>
+          <img src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10012/0115610839_fen_ins_frt_1_rr.jpg"
+            alt="Michael Landau Coma Stratocaster &reg;" class="product__img">
+          <div class="product__desc">
+            <p class="product__price">3,049.00 $</p>
+            <p class="product__variants"></p>
+          </div>
+        </article>
+        <article class="section__product">
+          <h2 class="product__name">Paranormal Custom Nashville Stratocaster &reg;</h2>
+          <img src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0377040578_sqr_ins_frt_1_rr.jpg"
+            alt="Paranormal Custom Nashville Stratocaster &reg;" class="product__img">
+          <div class="product__desc">
+            <p class="product__price">469.99 $</p>
+            <p class="product__variants">2 colors</p>
+          </div>
+        </article>
+        <article class="section__product">
+          <h2 class="product__name">Squier Sonic &trade; Telecaster &reg;</h2>
+          <img src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10013/0373450526_sqr_ins_frt_1_rr.jpg"
+            alt="Squier Sonic &trade; Telecaster" class="product__img">
+          <div class="product__desc">
+            <p class="product__price">199.99 $</p>
+            <p class="product__variants">4 colors</p>
+          </div>
+        </article>
+      </div>
+
+    </section>
+    <section class="section" id="fender-feed">
+      <h2 class="section__h2 section__h2--outstanding">Fender Feed</h2>
+      <div class="section__articles">
+        <article class="article">
+          <h2 class="article__title">American Professional II</h2>
+          <p class="article__caption">The. One. For. All.</p>
+          <img src="https://stuff.fendergarage.com/images/K/r/i/am-pro-II-feed-card-2023-v2@2x.jpg"
+            alt="American Professional II Stratocaster Guitar" class="article__img">
+        </article>
+        <article class="article">
+          <h2 class="article__title">Player plus series</h2>
+          <p class="article__caption">Copiadas, pero nunca igualadas</p>
+          <img src="https://stuff.fendergarage.com/images/Y/2/O/player-feed-card-2023@2x.jpg"
+            alt="Man playing a stratocaster" class="article__img">
+        </article>
+        <article class="article">
+          <h2 class="article__title">Artist Signature</h2>
+          <p class="article__caption">Chitarre leggendarie per musicisti iconici</p>
+          <img src="https://stuff.fendergarage.com/images/r/D/n/artist-feed-card-homepage-v2@2x.jpg"
+            alt="Bald men playing a stratocaster" class="article__img">
+        </article>
+        <article class="article">
+          <h2 class="article__title">California Series</h2>
+          <p class="article__caption">Play something different</p>
+          <iframe class="article__video" id="video" src="https://www.youtube.com/embed/XI2fw5nmcLE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="accesories">
+      <h2 class="section__h2">Accesories</h2>
+      <div class="section__products">
+        <article class="section__product">
+          <h2 class="product__name">Pure Silver Coin, Daphne Blue Stratocaster&trade;</h2>
+          <img src="https://www.fmicassets.com/Damroot/MedJpg/10008/9112020202_fen_mch_frt_1_nr.jpg"
+            alt="Pure Silver Coin, Daphne Blue Stratocaster&trade;" class="product__img">
+          <div class="product__desc">
+            <p class="product__price">125.99 $</p>
+            <p class="product__variants"></p>
+          </div>
+        </article>
+        <article class="section__product">
+          <h2 class="product__name">Fender &trade; Dynamic Duo Silver Coin Set</h2>
+          <img src="https://www.fmicassets.com/Damroot/MedJpg/10013/9112020203_fen_mch_frt_1_nr.jpg"
+            alt="Fender &trade; Dynamic Duo Silver Coin Set" class="product__img">
+          <div class="product__desc">
+            <p class="product__price">249.99 $</p>
+            <p class="product__variants"></p>
+          </div>
+        </article>
+        <article class="section__product">
+          <h2 class="product__name">Fender &reg; Work Mat Station</h2>
+          <img src="https://www.fmicassets.com/Damroot/MedJpg/10004/0990502007_fen_acc_frt_1_nr.jpg" alt=""
+            class="product__img">
+          <div class="product__desc">
+            <p class="product__price">79.99 $</p>
+            <p class="product__variants">2 colors</p>
+          </div>
+        </article>
+        <article class="section__product">
+          <h2 class="product__name">CuNiFe &reg; Straticaster &reg; Pickup Set</h2>
+          <img src="https://www.fmicassets.com/Damroot/MedJpg/10004/0992367000_fen_acc_frt_1_nr.jpg" alt=""
+            class="product__img">
+          <div class="product__desc">
+            <p class="product__price">379.00 $</p>
+            <p class="product__variants"></p>
+          </div>
+        </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__li"><a href="./privacy.html" class="footer__link">Privacy</a></li>
+      <li class="footer__li"><a href="./terms.html" class="footer__link">Terms</a></li>
+      <li class="footer__li"><a href="./contact.html" class="footer__link">Contact</a></li>
+    </ul>
+    <p class="footer__copyright">This site is based on Fender&reg; official website, for a freeCodeCamp.org project.
+    </p>
+  </footer>
+</body>
+
+</html>
