@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: #161616;
+  margin-top: 5rem;
+  color: #fafafa;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-content {
+  text-wrap: balance;
+  margin-bottom: 1rem;
+}
+
+.footer-author {
+  display: inline-block;
+  position: relative;
+  color: currentColor;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-author::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #fafafa;
+  transition: 1s ease width;
+}
+
+.footer-author:hover::after {
+  width: 100%;
+}

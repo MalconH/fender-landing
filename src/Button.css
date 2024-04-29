@@ -1,0 +1,15 @@
+.button {
+  border: 0;
+  background-color: var(--red);
+  font-family: "Mulish", sans-serif;
+  padding: 0 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--bg-color);
+  transition: 0.75s ease-in all;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: hsl(4, 75%, 40%);
+}
