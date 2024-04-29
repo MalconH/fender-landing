@@ -1,0 +1,46 @@
+.top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--red);
+
+  border-radius: 50%;
+
+  display: grid;
+  place-content: center;
+
+  box-shadow: 3px 5px 10px #00000070;
+
+  cursor: pointer;
+
+  transition: 1s ease opacity;
+  z-index: 2;
+}
+
+.top.hidden {
+  opacity: 0;
+}
+
+.top-icon {
+  width: 2rem;
+  height: 3rem;
+  color: var(--bg-color);
+}
+
+.top:hover .top-icon {
+  animation: pulse 0.75s linear 3;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.25rem) scale(1.05);
+  }
+}

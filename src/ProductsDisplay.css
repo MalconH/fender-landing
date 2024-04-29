@@ -1,0 +1,76 @@
+.products {
+  max-width: 80rem;
+  padding: 0 1rem;
+}
+.products-title {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.products-title::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  width: 3.5rem;
+  height: 4px;
+  background-color: var(--red);
+}
+
+.products-display {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product {
+  flex: 1;
+  flex-basis: 13rem;
+  max-width: 17rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 10px 0 #00000030;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.product-description {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--red);
+  color: var(--bg-color);
+}
+.product-title {
+  flex-basis: 100%;
+  font-family: "Mulish";
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.product-image {
+  background: #fff;
+  height: 25rem;
+  order: -1;
+  padding: 1rem;
+
+  object-fit: contain;
+}
+.product-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: block;
+}
+.product-colors {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
