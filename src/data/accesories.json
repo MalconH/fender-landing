@@ -4,27 +4,27 @@
     "title": "Pure Silver Coin, Daphne Blue Stratocaster™",
     "price": 125.99,
     "amountOfColors": 1,
-    "image": "/src/assets/pure-silver-coin-statocaster.jpg"
+    "image": "/img/pure-silver-coin-statocaster.jpg"
   },
   {
     "id": 2,
     "title": "Fender™ Dynamic Duo Silver Coin Set",
     "price": 249.99,
     "amountOfColors": 1,
-    "image": "/src/assets/fender-dynamic-duo-set.jpg"
+    "image": "/img/fender-dynamic-duo-set.jpg"
   },
   {
     "id": 3,
     "title": "Fender ® Work Mat Station",
     "price": 79.99,
     "amountOfColors": 2,
-    "image": "/src/assets/work-mat-station.jpg"
+    "image": "/img/work-mat-station.jpg"
   },
   {
     "id": 4,
     "title": "CuNiFe ® Stratocaster ® Pickup Set",
     "price": 379,
     "amountOfColors": 1,
-    "image": "src/assets/cunife-stratocaster-pickup-set.jpg"
+    "image": "/img/cunife-stratocaster-pickup-set.jpg"
   }
 ]
