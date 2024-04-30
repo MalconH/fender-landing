@@ -4,27 +4,27 @@
     "title": "Limited Edition Mikey Way Jazz Bass ®",
     "price": 1599,
     "amountOfColors": 1,
-    "image": "/img/limited-edition-mikey-way-jazz-bass.jpg"
+    "image": "./img/limited-edition-mikey-way-jazz-bass.jpg"
   },
   {
     "id": 2,
     "title": "Michael Landau Coma Stratocaster ®",
     "price": 3049,
     "amountOfColors": 1,
-    "image": "/img/michael-landau-coma-stratocaster.jpg"
+    "image": "./img/michael-landau-coma-stratocaster.jpg"
   },
   {
     "id": 3,
     "title": "Paranormal Custom Nashville Stratocaster ®",
     "price": 469.99,
     "amountOfColors": 2,
-    "image": "/img/paranormal-custom-nashville-stratocaster.jpg"
+    "image": "./img/paranormal-custom-nashville-stratocaster.jpg"
   },
   {
     "id": 4,
     "title": "Squier Sonic™ Telecaster ®",
     "price": 199.99,
     "amountOfColors": 4,
-    "image": "/img/squier-sonic-telecaster.jpg"
+    "image": "./img/squier-sonic-telecaster.jpg"
   }
 ]
