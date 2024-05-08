@@ -1,9 +1,9 @@
 # Lading page inspired by Fender
 
-![Screenshots of the web both mobile and desktop versions](./docs/fender-landing-page.jpg)
-
 Hi! 👋🏻 This web was originally a project for [freeCodeCamp](https://freecodecamp.org/) Responsive Web Design Course, some time ago. Now that I'm learning React I thought it'd be nice to add it into this project for practice.
 The web is not exactly a clone of the original Fender website, but rather it server as inspiration for my back in the day, and was useful to practice since it has many components that can be reusable.
+
+![Screenshots of the web both mobile and desktop versions](./docs/fender-landing-page.jpg)
 
 Overall I'm very happy with the result though I see some things that could be improved.
 
