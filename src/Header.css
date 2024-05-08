@@ -1,8 +1,9 @@
 .header {
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
+  min-height: 4rem;
   background-color: var(--bg-color);
-
   padding: 1rem 0;
 
   display: flex;
@@ -29,7 +30,6 @@
   width: 100%;
   flex: 1;
   transition: 1s ease all;
-  padding: 1rem 0;
 }
 
 .header-nav.collapsed {
