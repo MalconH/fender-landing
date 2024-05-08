@@ -5,18 +5,23 @@
   align-items: center;
   text-align: center;
   padding: 1rem;
-  height: 80svh;
+  height: 85vh;
+  width: 100%;
+  background: url("https://www.sweetwater.com/insync/media/2022/06/Coolest-Fender-Stratocaster-Playersf-Featured-Image.jpg")
+    no-repeat;
+  background-size: cover;
 }
 .newsletter-title {
   text-wrap: balance;
-  color: var(--red);
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
 
 .newsletter-form {
-  width: 100%;
+  width: 70%;
+  max-width: 50rem;
   display: flex;
   gap: 1rem;
 }
