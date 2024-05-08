@@ -1,19 +1,24 @@
 import { useState } from "react";
 import "./Top.css";
 import { useEffect } from "react";
+import debounce from "./utils/debounce";
 
 export function Top() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
+    const handleScroll = debounce(
+      () => {
+        setScrollPosition(window.scrollY);
+      },
+      250,
+      { leading: true, trailing: false }
+    );
 
-    window.addEventListener("scrollend", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scrollend", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

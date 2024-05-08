@@ -3,8 +3,9 @@ import { useState } from "react";
 import { Logo } from "./Logo";
 import "./Header.css";
 import { CollapseNav } from "./CollapseNav";
+import debounce from "./utils/debounce";
 
-function debounce(func, delay) {
+/* function debounce(func, delay) {
   let timer;
   return function () {
     let context = this,
@@ -14,7 +15,7 @@ function debounce(func, delay) {
       func.apply(context, args);
     }, delay);
   };
-}
+} */
 
 export function Header() {
   const [scrolledDown, setScrolledDown] = useState(null);
@@ -29,15 +30,19 @@ export function Header() {
   // Subscribe to scroll event and set scrolledDown state
   useEffect(() => {
     // debounce to avoid multiple calls
-    const handleScroll = debounce(() => {
-      const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
-        setScrolledDown(true);
-      } else if (currentScrollPos < prevScrollPos) {
-        setScrolledDown(false);
-      }
-      setPrevScrollPos(currentScrollPos);
-    }, 250);
+    const handleScroll = debounce(
+      () => {
+        const currentScrollPos = window.scrollY;
+        if (currentScrollPos > prevScrollPos) {
+          setScrolledDown(true);
+        } else if (currentScrollPos < prevScrollPos) {
+          setScrolledDown(false);
+        }
+        setPrevScrollPos(currentScrollPos);
+      },
+      250,
+      { leading: true, trailing: false }
+    );
 
     window.addEventListener("scroll", handleScroll);
 
