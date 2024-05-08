@@ -24,7 +24,6 @@ export function Header() {
 
   const handleCollapse = () => {
     setIsCollapsed(!isCollapsed);
-    console.log("collapse");
   };
 
   // Subscribe to scroll event and set scrolledDown state
